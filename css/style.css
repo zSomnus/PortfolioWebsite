@@ -54,3 +54,9 @@ p{
     /* top: 0%;
     transform: rotate(90deg); */
 }
+
+.intro{
+    display: flex;
+    justify-content: center;
+}
+

@@ -1,15 +1,17 @@
+body{
+    margin: 0px;
+}
+
 .navbar-container{
     font-size: 15px;
     border-style: solid;
     border-color: #ff00ff;
-    border-width: 2px;
+    border-bottom-width: 2px;
     /* box-shadow: 0px 2px 2px #ff00ff; */
     margin-top: -16px;
     margin-right: -10px;
     margin-left: -10px;
     height: 70px;
-    width: auto
-    
 }
 
 .navbar-container nav{
@@ -52,19 +54,35 @@ p{
 .intro section{
     height: 940px;
 }
-.intro img{
-    image-orientation: from-image;
-    border: 2px solid #ff00ff;
-    /* top: 0%;
-    transform: rotate(90deg); */
-}
 
 .intro{
+    margin-top: 40px;
     display: flex;
     justify-content: center;
 }
 
+/* intro */
+#intro-picture img{
+    image-orientation: from-image;
+    border: 5px solid #ff00ff;
+    border-radius: 5000px;
+    height: 500px;
+}
+
+#intro-text h1{
+    padding-top: 50px;
+    color: #ffffff;
+    margin: 0px;
+}
+
+#intro-text-name{
+    padding: 0px;
+    font-size: 90px;
+}
+
+/* about */
 .about{
+    margin-top: 80px;
     color: #ffffff;
     height: 700px;
     text-align: center;
@@ -92,19 +110,6 @@ p{
     padding-left: 10px;
 }
 
-.portfolio{
-    height: 700px;
-}
-#intro-text h1{
-    color: #ffffff;
-    margin: 0px;
-}
-
-#intro-text-name{
-    padding: 0px;
-    font-size: 90px;
-}
-
 .about-info{
     color: #ffffff;
     display: flex;
@@ -114,12 +119,28 @@ p{
 }
 
 .about-info div{
+    border-radius: 20px;
     margin: 30px;
     padding: 0px 30px;
     background-color: #18D618;
 }
-.about-info div:nth-child(2n){
+.about-info div:nth-child(2){
     margin: 30px;
-    padding: 0px 80px;
+    padding: 0px 40px 0px 40px;
     background-color: #EF2D7C;
+}
+.about-info div:nth-child(3){
+    margin: 30px;
+    padding: 0px 40px;
+    background-color: #A41EE0;
+}
+
+/* portfolio */
+.portfolio{
+    height: 700px;
+}
+
+.portfolio h1{
+    color: #ffffff;
+    text-align: center;
 }

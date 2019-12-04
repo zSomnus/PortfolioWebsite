@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <link rel="stylesheet" href="css/theLastRadiant.css">
+    </head>
+    <body>
+        <h1>The Last Radiant</h1>
+        <div class="intro">
+            <p>The Last Ratiant is a souls-like third-person action game made by Unreal Engine 4.</p>
+        </div>
+        <div class="input">
+
+        </div>
+        <div class="screenshots">
+            <h1>Screenshots</h1>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img/TLR_inside_3floor.png" style="width:100%">
+                    <div class="text">Caption One</div>
+                </div>
+        
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img/TLR_outside.png" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+        
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img/TLR_screenshot_inside1.png" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+        
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>  <!-- The "<" character -->
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>   <!-- The ">" character -->
+        
+            </div>
+            <br>
+            
+            <div class ="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <script>
+                var slideIndex = 1;     // slides indexed from 1
+                showSlides(slideIndex);
+        
+                var timeout = null;
+                timeout = setTimeout(automaticChange, 7000);  // To avoid automatic change, comment this line
+        
+                function plusSlides(n) {
+                    slideIndex += n;
+                    showSlides(slideIndex);
+                    /* if automaticChange is on, reset the timer */
+                    if (timeout !== null) {
+                        clearTimeout(timeout);
+                        timeout = setTimeout(automaticChange, 7000);
+                    }
+                }
+        
+                function currentSlide(n) {
+                    slideIndex = n
+                    showSlides(slideIndex);
+                    /* if automaticChange is on, reset the timer */
+                    if (timeout !== null) {
+                        clearTimeout(timeout);
+                        timeout = setTimeout(automaticChange, 7000);
+                    }
+                }
+        
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }   // if beyond the last one, go to the first one
+                    if (n < 1) { slideIndex = slides.length }   // if before the first one, go to the last one
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+        
+                function automaticChange() {
+                    slideIndex++;
+                    showSlides(slideIndex);
+                    timeout = setTimeout(automaticChange, 7000);   // call again automaticChange() after 7s
+                }
+            </script>
+
+        </div>
+    </body>
+</html>

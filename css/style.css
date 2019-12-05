@@ -9,7 +9,10 @@ body{
 .navbar-container{
     font-size: 15px;
     border-style: solid;
-    border-color: #ff00ff;
+    /* border-color: #ff00ff; */
+    border-bottom: 5px solid;
+    border-image: linear-gradient(-90deg, #ff00ff, #00ffff);
+    border-image-slice: 10;
     background-color: #252525;
     border-bottom-width: 2px;
     /* box-shadow: 0px 2px 2px #ff00ff; */
@@ -58,7 +61,8 @@ body{
 }
 
 body{
-    background-color: #2d2d2d;
+    /* background-color: #2d2d2d; */
+    background-color: #222222;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     /* font-family: 'Courier New', Courier, monospace; */
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
@@ -142,17 +146,17 @@ p{
     border-radius: 20px;
     margin: 30px;
     padding: 0px 30px;
-    background-color: #18D618;
+    background-color: #ED145B;
 }
 .about-info div:nth-child(2){
     margin: 30px;
     padding: 0px 40px 0px 40px;
-    background-color: #EF2D7C;
+    background-color: #0275B4;
 }
 .about-info div:nth-child(3){
     margin: 30px;
     padding: 0px 40px;
-    background-color: #A41EE0;
+    background-color: #04A67C;
 }
 
 /* portfolio */
@@ -181,6 +185,7 @@ p{
 }
 
 #the-last-radiant{
+    margin: 40px;
     list-style-type: none;
     height: 100px;
     background-image: url(../img/TLR_SS01.png);
@@ -189,6 +194,7 @@ p{
 }
 
 #DREADWIND{
+    margin: 40px;
     list-style-type: none;
     height: 100px;
     background-image: url(../img/DREADWIND.png);

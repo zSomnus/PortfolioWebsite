@@ -159,11 +159,41 @@ p{
 .portfolio{
     margin-bottom: 300px;
     padding-top: 70px;
+    padding-left: 0;
+}
+
+.portfolio ol{
+    padding-left: 0px;
 }
 
 .portfolio h1{
     color: #ffffff;
     text-align: center;
+}
+
+.portfolio ol li a{
+    height: 100%;
+    width: 100px;
+}
+
+.portfolio div{
+    height: 100px;
+}
+
+#the-last-radiant{
+    list-style-type: none;
+    height: 100px;
+    background-image: url(../img/TLR_SS01.png);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#DREADWIND{
+    list-style-type: none;
+    height: 100px;
+    background-image: url(../img/DREADWIND.png);
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 .slideshow-container {
@@ -249,7 +279,7 @@ img {
 
 /* the class active will be added by the JavaScript code to mark the active dot*/
 .active, .dot:hover {
-    background-color: #717171;
+    background-color: #ff00ff;
 }
 
 /* Fading animation */

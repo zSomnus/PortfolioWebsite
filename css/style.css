@@ -1,14 +1,18 @@
-html{
-    scroll-behavior: smooth;
+ol li{
+    list-style-type: none;
 }
 
-body{
-    margin: 0px;
+html{
+    scroll-behavior: smooth;
 }
 
 h1{
     font-size: 65px;
     margin-bottom: 0px;
+}
+
+#intro-text{
+    margin-left: initial;
 }
 
 #intro-text h2{
@@ -45,13 +49,13 @@ h1{
 .navbar-container nav{
     position: absolute;
     margin: auto;
-    right: 100px;
+    right: 20px;
     top: 4px;
 }
 
 .navbar-container ul li{
     display: inline-block;
-    margin-left: 20px;
+    margin: 5px 20px 5px 20px;
 }
 
 .navbar-container ul li a{
@@ -76,12 +80,14 @@ h1{
 }
 
 body{
+    margin: auto;
     /* background-color: #2d2d2d; */
     background-color: #222222;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     /* font-family: 'Courier New', Courier, monospace; */
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 70%;
 }
 
 p{
@@ -91,7 +97,7 @@ p{
 
 /* intro */
 #home{
-    padding-top: 70px;
+    padding-top: 120px;
 }
 
 .intro section{
@@ -99,9 +105,8 @@ p{
 }
 
 .intro{
-    margin-top: 150px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #intro-picture img{
@@ -112,10 +117,6 @@ p{
     /* border-image: linear-gradient(to bottom right, #ff00ff, #00ffff) 10; */
     height: 500px;
 
-}
-
-#intro-picture{
-    margin-left: 10px;
 }
 
 #intro-picture figure{
@@ -138,7 +139,7 @@ p{
     margin: auto;
     padding-top: 70px;
     /* margin-top: 150px; */
-    width: 80%;
+    width: 100%;
     color: #ffffff;
     height: 600px;
     text-align: center;
@@ -177,7 +178,7 @@ p{
 .about-info{
     color: #ffffff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     /* display: flex;
     justify-content: space-around; */
 }
@@ -189,9 +190,7 @@ p{
 
 .about-info div{
     border-radius: 20px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0px 10px 0px;
     padding: 0px 30px;
     background-color: #620020;
     border: 1px solid;
@@ -213,7 +212,7 @@ p{
 
 .portfolio{
     margin: auto;
-    width: 80%;
+    width: 100%;
 }
 
 .portfolio ol{
@@ -261,7 +260,7 @@ p{
 }
 
 .slideshow-container {
-    max-width: 940px;
+    max-width: 100%;
     position: relative;
     margin: auto;
 }
@@ -382,10 +381,6 @@ img {
     padding-top: 70px;
 }
 
-.album{
-    padding: 70px;
-}
-
 .album h1{
     color: #ffffff;
     text-align: center;
@@ -414,17 +409,9 @@ img {
         margin-left: 0px;
     }
 
-    #intro-picture figure{
-        margin-left: auto;
-    }
-
     .about{
         margin: auto;
         height: 1000px;
-    }
-
-    .about figure{
-        margin: auto;
     }
 
     .about-info{

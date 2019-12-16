@@ -66,6 +66,10 @@ body{
     text-align: center;
     font-size: 90px;
 }
+.intro p{
+    text-align: center;
+    font-size: 24px;
+}
 /* h1{
     text-align: center;
 } */

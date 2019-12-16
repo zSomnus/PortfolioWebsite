@@ -198,11 +198,11 @@ p{
     border-color: #656565;
 }
 .about-info div:nth-child(2){
-    padding: 0px 40px 0px 40px;
+    /* padding: 0px 40px 0px 40px; */
     background-color: #003856;
 }
 .about-info div:nth-child(3){
-    padding: 0px 40px;
+    /* padding: 0px 40px; */
     background-color: #004332;
 }
 
@@ -443,4 +443,60 @@ img {
         width: 100%;
         padding-top: 0px;
     }
+}
+
+@media (max-width : 480px){
+    #intro-picture{
+        margin-top: 20px;
+    }
+    #intro-picture figure img{
+        height: auto;
+        max-width: 80%;
+    }
+
+    #intro-text h2{
+        font-size: 20px;
+    }
+    #intro-text h1{
+        font-size: 40px;
+    }
+    #intro-text p{
+        font-size: 11px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 12px;
+    }
+    
+    .about div, .about-skill{
+        padding: 0px;
+    }
+
+    .about-skill{
+        padding: 0px;
+    }
+    
+    .about div div:hover{
+        transform: scale(1);
+    }
+
+    .about-contact{
+        text-align: center;
+    }
+
+    .about-contact table{
+        text-align: justify;
+        padding: 0px;
+        font-size: 10px;
+    }
+
+    .navbar-container ul li{
+        margin: 0px;
+        font-size: 10px;
+    }
+
 }

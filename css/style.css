@@ -11,6 +11,11 @@ h1{
     margin-bottom: 0px;
 }
 
+h3{
+    color: #ffffff;
+    text-align: center;
+}
+
 #intro-text{
     margin-left: initial;
 }
@@ -120,7 +125,7 @@ p{
 }
 
 #intro-picture figure{
-    margin-right: 0px;
+    margin: 0px;
 }
 
 #intro-text h1{
@@ -147,10 +152,6 @@ p{
 
 .about h1{
     margin-bottom: 0px;
-}
-
-.about h3{
-    margin-top: 0px;
 }
 
 .about-contact table{
@@ -260,9 +261,17 @@ p{
 }
 
 .slideshow-container {
-    max-width: 100%;
+    max-width: auto;
     position: relative;
     margin: auto;
+    padding: auto;
+    overflow: hidden;
+    width: auto;
+    text-align: center;
+}
+
+.slideshow-container div img{
+    max-height: 770px;
 }
 
 .mySlides {
@@ -427,6 +436,11 @@ img {
     }
 
     #portfolio{
+        padding-top: 0px;
+    }
+
+    .slideshow-container div img{
+        width: 100%;
         padding-top: 0px;
     }
 }

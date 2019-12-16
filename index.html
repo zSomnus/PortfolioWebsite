@@ -5,21 +5,23 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
-    <div class="navbar-container">
-        <nav>
-            <ul>
-                <li><a id="nav-home" href="#home">HOME</a></li>
-                <li><a id="nav-about" href="#about">ABOUT</a></li>
-                <li><a id="nav-portfolio" href="#portfolio">PORTFOLIO</a></li>
-                <li><a id="nav-album" href="#album">ALBUM</a></li>
-            </ul>
-        </nav>
-        <script>
-            window.querySelector('.about').scrollTo();
-        </script>
-        
-    </div>
     <body>
+        <header>
+            <div class="navbar-container">
+                <nav>
+                    <ul>
+                        <li><a id="nav-home" href="#home">HOME</a></li>
+                        <li><a id="nav-about" href="#about">ABOUT</a></li>
+                        <li><a id="nav-portfolio" href="#portfolio">PORTFOLIO</a></li>
+                        <li><a id="nav-album" href="#album">ALBUM</a></li>
+                    </ul>
+                </nav>
+                <script>
+                    window.querySelector('.about').scrollTo();
+                </script>
+                
+            </div>
+        </header>
         
         <div class="intro" id="home">
             <div id="intro-text">
@@ -80,6 +82,7 @@
         </div>
         <div class="portfolio" id="portfolio">
                 <h1>Portfolio</h1>
+                <h3>These are my works</h3>
                 <ol>
                     <li>
                         <a href="theLastRadiant.html">
@@ -106,23 +109,24 @@
         </div>
         <div class="album" id="album">
             <h1>Album</h1>
+            <h3>These photos are about my personal life</h3>
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="img/techWeek.jpg" style="width:100%">
-                    <div class="text">Caption One</div>
+                    <!-- <div class="numbertext">1 / 3</div> -->
+                    <img src="img/techWeek.jpg" style="height:100%">
+                    <!-- <div class="text">Caption One</div> -->
                 </div>
         
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="img/techWeek.jpg" style="width:100%">
-                    <div class="text">Caption Two</div>
+                    <!-- <div class="numbertext">2 / 3</div> -->
+                    <img src="img/Ella01_1.jpg" style="width:100%">
+                    <!-- <div class="text">Caption Two</div> -->
                 </div>
         
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="img/techWeek.jpg" style="width:100%">
-                    <div class="text">Caption Three</div>
+                    <!-- <div class="numbertext">3 / 3</div> -->
+                    <img src="img/Ella02.jpg" style="height:100%">
+                    <!-- <div class="text">Caption Three</div> -->
                 </div>
         
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>  <!-- The "<" character -->

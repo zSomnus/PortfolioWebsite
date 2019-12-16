@@ -157,7 +157,7 @@ img {
 
 /* the class active will be added by the JavaScript code to mark the active dot*/
 .active, .dot:hover {
-    background-color: #717171;
+    background-color: #ff00ff;
 }
 
 /* Fading animation */
